@@ -1,0 +1,49 @@
+BINARYSEARCH(MYLIST, LOWER, UPPER)
+
+	myList <- []
+	PRINT "Input integers in ascending order"
+	FOR i in (0 to 6)
+		number <- INPUT integers
+		myList append (number)
+	PRINT "Your sequence is..."
+
+	lower <- INPUT for lower bound
+	upper <- INPUT for upper bound
+
+	IF upper <= lower 
+		PRINT "The upper bound value needs to be higher than the lower bound"
+
+
+	ELIF length of myList == 1
+		mid <- myList [0]
+
+	ELSE
+		lowest <- myList [0]
+		highest <- length of myList -1
+		mid <- length of myList / 2
+
+		
+	IF upper < myList[0] or lower > myList[length -1]
+		PRINT "There is no number between the lower and higher bounds"
+		RETURN
+
+	OUTPUT(lower, upper, mid)
+
+
+	IF lower <= myList[mid] and upper >= myList[mid]
+		FOR i in lower to upper
+			IF i in myList
+				PRINT "There is a number(s) between the lower and higher bounds"
+				
+
+	ELIF lower < myList[mid] and upper < myList[mid]
+		RETURN BINARYSEARCH(myList[0 to mid], lower, upper)
+	
+	ELIF lower > myList[mid] and upper > myList[mid]
+		RETURN BINARYSEARCH(myList[mid to length-1], lower, upper)
+
+
+BINARYSEARCH (MYLIST, LOWER, UPPER)
+
+
+	

@@ -1,0 +1,41 @@
+[Question 1: Shuffling Arrays]
+
+Copy of code:
+
+
+(1) def shuffleArray():
+    '''A function that randomly shuffles an array. The function takes a random element from
+the array and swaps it's position with the element in index 0. It does this for every number in
+the array.'''
+
+(1)   array = [1,2,3,4,5,6,7,8]
+(1)   print("The original array: ",array)
+(1)   import random
+(n)   for i in array:
+(n)        randInt = random.randrange(0, len(array))               #randomly selects element in array
+(n)        array[0], array[randInt] = array[randInt], array[0]     #swap element at index 0 with the randomly selected element. 
+(1)    print ("The randomly shuffled array: ",array)
+
+(1) shuffleArray()
+
+
+Runtime = 3n + 5
+Big O Notation = (n)
+
+
+
+[Question 2:]
+
+Copy of code:
+
+
+(1)	zeros= 0
+(1)	fact = int(input("Input any whole, factorial number and this program will calculate the number of trailing zeros it has: "))
+
+(n)	while fact != 0:                                 #While the factorial isn't equal to zero
+(n)    		fact = fact/5                                #factorial = factorial divided by 5
+(n)    		zeros = zeros + int(fact)                    #zeros becomes zero + factorial
+(1)	print("The number of trailing zeros is : ",zeros)
+
+Runtime = 3n + 3
+Big O Notation = (n)

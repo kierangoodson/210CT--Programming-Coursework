@@ -1,0 +1,11 @@
+HIGHEST_PERFECT_SQUARE()
+
+'''This function finds the highest perfect square number 
+that is less than or equal to any input integer'''
+	
+	INPUT <- user input integer
+
+	squareRoot <- square root of INPUT
+	perfectSquare <- squareRoot to power of 2
+
+OUTPUT perfectSquare 

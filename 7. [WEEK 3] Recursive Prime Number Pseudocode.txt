@@ -1,0 +1,28 @@
+PRIME_NUMBER()
+
+	prime <- True
+
+	IF n >= 2
+
+		FOR i in (2 to n) 
+
+			IF not (n / i)
+
+				prime <- False
+	IF n == 1
+
+		prime <- False
+		OUTPUT "1 is not considered a prime number"
+	
+	ELSE
+		prime <- True
+
+	IF prime <- False
+		OUTPUT "Not prime number"
+
+	ELSE
+		OUTPUT "Is prime number"
+
+n <- INPUT 
+
+PRIME_NUMBER()

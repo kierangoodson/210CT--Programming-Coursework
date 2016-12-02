@@ -1,0 +1,16 @@
+VOWEL_KILLER()
+
+	VOWELS <- (a,e,i,o,u)
+
+	n <- INPUT string
+
+	new <- " "    				//blank space string
+
+	FOR letter in n:
+		IF letter not in VOWELS:
+			new = new + letter
+	OUTPUT new
+
+VOWEL_KILLER()
+	
+	

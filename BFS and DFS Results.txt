@@ -1,0 +1,2 @@
+The results of your Depth First Search are:[5, 10, 6, 7, 2, 3, 9, 8, 4, 1]
+The results of your Breadth First Search are:[5, 3, 4, 8, 10, 2, 9, 6, 1, 7]

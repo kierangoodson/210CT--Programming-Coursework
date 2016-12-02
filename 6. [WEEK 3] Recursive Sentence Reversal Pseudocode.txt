@@ -1,0 +1,16 @@
+SENTENCE_REVERSAL ()
+'''This function reverses all the words in any input sentence'''
+
+
+	IF length string <- 0
+		RETURN reverse
+
+	ELSE
+		reverse <- reverse + " " + pop string      //Takes the first word off the array and puts it as the first word in 
+		RETURN SENTENCE_REVERSAL(STRING, REVERSE)
+
+sent <- INPUT 
+
+list <- sent split 					   //Creates list for each word, splitting them up individually and removing whitespace 
+
+OUTPUT SENTENCE_REVERSAL(LIST, REVERSE)			 

@@ -1,0 +1,48 @@
+
+class GRAPH (Object)
+
+	INSERT (n)
+		append n 
+
+	ADDEDGE (v1,v2)
+			
+		IF v2 NEIGHBOURS not in v1 NEIGHBOURS
+			v1 NEIGHBOURS (append v2)
+			v2 NEIGHBOURS (append v1)
+		ELSE
+			PRINT "Vertices already share edge"
+
+
+	DISPLAYNODES
+		PRINT "The graph has following nodes", verticies
+	
+	DISPLAYCONNECTIONS
+		CONNECTED()
+
+
+Class VERTEX (Object)
+
+	VALUE <- value
+	NEIGHBOURS = []
+
+	CONNECTED ()
+		PRINT value,"is connected", NEIGHBOURS 		
+
+g <- graph
+vertice <- {}
+
+
+
+FOR i in (1,11)
+	vertice[i] <- VERTEX [i]
+	
+FOR i in (1,11)
+	INSERT (vertice[i])
+
+//Here we would add all the edges to the verticies
+
+
+DISPLAYNODES()
+
+FOR i in (1,11)
+	DISPLAYCONNECTIONS(vertice[i])

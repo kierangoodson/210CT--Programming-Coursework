@@ -1,0 +1,38 @@
+MATRIX_ADDITION(B,C)
+
+	IF length B == length C:
+		calc = B
+		FOR i in length B
+			FOR j in length B[0]
+				calc [i][j] = B[i][j] + C[i][j]
+
+		RETURN calc
+	ELSE:
+		RETURN "Matrix needs to be same length"
+
+
+MATRIX_SUBTRACTION(B,C)
+
+	IF length B == length C:
+		calc = B
+		FOR i in length B
+			FOR j in length B[0]
+				calc [i][j] = B[i][j] - C[i][j]
+
+		RETURN calc
+	ELSE:
+		RETURN "Matrix needs to be same length"
+
+
+MATRIX_MULTIPLICATION(INT, MATRIX)
+
+	FOR i in length matrix
+		FOR j in length matrix[0]
+			calc [i][j] <- int * matrix[i][j]
+	
+	RETURN calc		
+
+
+//compute A = B*C -2*(B+C) 
+
+A <- call MATRIX_SUBTRACTION((call MATRIX_MULTIPLICATION(B,C)) , (2*(call MATRIX_ADDITION(B,C))
